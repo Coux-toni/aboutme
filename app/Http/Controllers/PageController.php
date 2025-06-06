@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Link;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -14,7 +15,14 @@ class PageController extends Controller
         return view('impressum');
     }
     public function links(){
-        return view('links');
+
+        $links = Link::all();
+
+
+
+        return view('links',[
+            'mylinks' => $links
+        ]);
     }
     public function hobbies(){
         return view('hobbies');

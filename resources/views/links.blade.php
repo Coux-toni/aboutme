@@ -28,6 +28,13 @@
             <a href="https://aboutme-app.test/start" class="text-blue-600 hover:text-blue-800 underline">Start</a>
         </li>
     </ul>
+
+    <ul class="space-y-2 text-center">
+        @foreach($mylinks as $link)
+            <li> <a href="{{$link->url}}" class="text-blue-600 hover:text-blue-800 underline">{{$link->emoji}}{{$link->name}}</a></li>
+        @endforeach
+
+    </ul>
 </div>
 
 </body>
