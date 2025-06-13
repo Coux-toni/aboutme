@@ -1,11 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Links</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+@extends('app')
+@yield('title', 'My Blog')
+
+@section('content')
 <body class="bg-gray-100 text-gray-800 font-sans flex items-center justify-center min-h-screen">
 
 <div class="bg-white shadow-lg rounded-2xl p-8 max-w-md w-full space-y-4">
@@ -38,4 +34,4 @@
 </div>
 
 </body>
-</html>
+@endsection

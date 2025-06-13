@@ -14,6 +14,9 @@ class PageController extends Controller
     public function impressum(){
         return view('impressum');
     }
+    public function blog(){
+        return view('blog');
+    }
     public function links(){
 
         $links = Link::all();

@@ -7,6 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
+<nav class="flex justify-start md:justify-center m-3 border-b-2 border-amber-400">
+    <ul class=" flex flex-col md:flex-row space-x-6 m-3 text-2xl text-black">
+        <li>
+            <a href="https://aboutme-app.test/impressum" class="text-blue-600 hover:text-blue-800 underline">Impressum</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/blog" class="text-blue-600 hover:text-blue-800 underline">Blog</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/aboutme" class="text-blue-600 hover:text-blue-800 underline">About Me</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/hobbies" class="text-blue-600 hover:text-blue-800 underline">Hobbies</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/start" class="text-blue-600 hover:text-blue-800 underline">Start</a>
+        </li>
+    </ul>
+</nav>
 <!-- Header -->
 <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">

@@ -1,14 +1,31 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+@extends('app')
+@yield('title', 'My Blog')
 
-<div class="text-center">
+@section('navigation')
+<nav class="flex justify-start md:justify-center m-3 border-b-2 border-amber-400">
+    <ul class=" flex flex-col md:flex-row space-x-6 m-3 text-2xl text-black">
+        <li>
+            <a href="https://aboutme-app.test/impressum" class="text-blue-600 hover:text-blue-800 underline">Impressum</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/blog" class="text-blue-600 hover:text-blue-800 underline">Blog</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/aboutme" class="text-blue-600 hover:text-blue-800 underline">About Me</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/hobbies" class="text-blue-600 hover:text-blue-800 underline">Hobbies</a>
+        </li>
+        <li>
+            <a href="https://aboutme-app.test/start" class="text-blue-600 hover:text-blue-800 underline">Start</a>
+        </li>
+    </ul>
+</nav>
+@endsection
+
+@section('content')
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="">
     <img
         src="{{asset('images/toni.png')}}"
         alt="Mein Foto"
@@ -17,4 +34,5 @@
 </div>
 
 </body>
-</html>
+@endsection
+
